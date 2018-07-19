@@ -1,0 +1,108 @@
+body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+    }
+    p {font-size: 16px;}
+    .margin {margin-bottom: 45px;}
+    .bg-1 { 
+        background-color: #7CBDC6; /* Green */
+        color: #ffffff;
+    }
+    .bg-2 { 
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+    }
+    .bg-3 { 
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+    .bg-4 { 
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+    }
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        background-color: #C5D4D6;
+    }
+    .navbar-nav  li a:hover {
+        color: #1abc9c !important;
+    }
+    #message{
+      height: 300px;
+    }
+    
+    .contact{
+      width: 500px;
+    }
+    
+    .contact input, .contact textarea{
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      border: 2px solid #cccccc;
+      margin-bottom: 1.5em;
+      padding: 1em;
+      font-size: 16px;
+    }
+    
+    .contact button {
+      width: auto;
+      background-color: #4aaaa5;
+      color: #ffffff;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1em;
+      margin: 0 auto;
+    }
+    
+    ::placeholder {
+      color: #cccccc;
+    }
+    .content{
+      width: 960px;
+      clear: both; 
+      margin: 0 auto 6em auto;
+    }
+    
+    .main{
+      display: inline-block;
+      width: 770px;
+      margin: 70px 0;
+      padding: 40px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      color:black;
+    }
+    
+    .main h2 {
+      font-size: 2em;
+      font-weight: bold;
+      padding-bottom: 1em;
+      margin-bottom: 0.8em;
+      border-bottom: 2px solid #dddddd;
+    }
+    
+    .main p {
+      font-size: 16px;
+      line-height: 1.75em;
+    margin-bottom: 2em;
+    color:black;
+    }
+    
+    img.about-photo {
+      float: left;
+      padding: 0 1em 1em 0;
+      width: 200px;
+      height: 200px;
+    }
