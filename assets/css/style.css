@@ -2,9 +2,16 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
+   box-sizing: border-box;
+    
 }
 p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+
+.margin {
+    margin-bottom: 45px;
+  
+    }
+
 .bg-1 { 
     background-color: #7CBDC6; /* Green */
     color: #ffffff;
@@ -23,10 +30,10 @@ p {font-size: 16px;}
 }
 .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0 auto;
     z-index: 1000;
     width:100%;
@@ -39,9 +46,13 @@ p {font-size: 16px;}
     font-size: 12px;
     letter-spacing: 5px;
     background-color: #C5D4D6;
+    
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+    transform: scale(1.15);
+
+    
 }
 
 .white, .white a{ color: blue;}
@@ -52,7 +63,7 @@ p {font-size: 16px;}
 
 .logo-icons{
     display: inline;
-    padding: 15px;
+    padding: 10px;
 }
 
 .bio{
@@ -60,7 +71,7 @@ p {font-size: 16px;}
     text-align:left;
 }
 .logocons{
-    width: 80px;
+    width: 50px;
     margin-left: 50px;
     transition: all .2s ease-in-out;
 }
@@ -80,8 +91,8 @@ p {font-size: 16px;}
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 7.5s steps(80, end),
-    blink-caret .25s ;
+    typing 5.5s steps(100, end),
+    blink-caret 2.5s ;
 }
 
 
@@ -102,22 +113,27 @@ body {
     color: #f5f6f7;
 }
 p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+.margin {margin-bottom: 45px;
+}
 .bg-1 { 
-    background-color: #7CBDC6; /* Green */
+    background-color: #7CBDC6; 
     color: #ffffff;
 }
 .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #474e5d; 
     color: #ffffff;
 }
 .bg-3 { 
-    background-color: #ffffff; /* White */
+    background-color: #79d6a9; 
     color: #555555;
 }
 .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #2f2f2f; 
     color: #fff;
+}
+.bg-5 { 
+    background-color: rgba(69, 182, 194, 0.932); 
+    color: #ffffff;
 }
 .container-fluid {
     padding-top: 70px;
@@ -132,21 +148,21 @@ p {font-size: 16px;}
     font-size: 12px;
     letter-spacing: 5px;
     background-color: #C5D4D6;
+    
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
 
 
-.hobby{
+/* .hobby{
     color:black;
     text-align:center;
-}
-/* HOBBY PAGE IMAGES */
+} */
+/* PROJECTS */
 .image {
     display: block;
-    width: 100%;
-    height: auto;
+   width: 70%;
   }
   
   .overlay {
@@ -155,11 +171,11 @@ p {font-size: 16px;}
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgb(12, 80, 103);
   }
   
   .container:hover .overlay {
@@ -177,4 +193,76 @@ p {font-size: 16px;}
     text-align: center;
   }
 
-  
+
+  #projects{
+      color:white;
+  }
+    /* HOVER PROJECT SECTION  */
+    .contained {
+        position: relative;
+     
+        display: block;
+       
+      }
+      
+      .image {
+        display: block;
+        height: 400px;
+        width: 500px;
+        text-align: center;
+       
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 400px;
+        width: 500px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(27, 234, 245);
+      }
+      
+      .contained:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      /**************************************
+      FONT AWESOME STUFF
+      ***************************************/
+      .mailMe{
+        font-size:1.5em;
+        padding-right: 110px;
+        padding-left: 110px;
+
+      }
+      .phoneMe{
+        font-size:1.5em;
+        padding-right: 110px;
+        padding-left: 110px;
+
+      }
+      
+
+
+
+      .contact-me{
+       margin: 0px auto;
+       
+
+    }

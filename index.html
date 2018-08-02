@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <!-- // Add the new slick-theme.css if you want the default styling -->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
   
@@ -27,27 +29,33 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div  class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Samuel Marcus Portfolio</a>
+      <a class="navbar-brand" href="#home">Samuel Marcus Portfolio</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="contact.html">Contact Me </a></li>
-        <li><a href="hobbies.html">Other Works</a></li>
+        <li><a href="#aboutme">About Me </a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
       </ul>
     </div>
   </div>
 </nav>
+<div id="home">
+  <!-- spacing for scroll to top of page on name click -->
+</div>
 <br />
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
+<div id="aboutme" class="container-fluid bg-1 text-center">
   <h3 class="margin header">Who Am I?</h3><br>
 
   <div class="row container-fluid">
@@ -57,16 +65,16 @@
     <h4>Check on my Github, LinkedIn, and Stackoverflow!</h4>
     <br>
     <div class="container-fluid logo-icons">
-      <a href="https://www.linkedin.com/in/smarcus4/"><img class="logocons" src="assets/images/github.png" /></a>
-      <a href="https://github.com/smarcus4"><img class="logocons" src="assets/images/linkedin.png" /></a>
-      <a href="https://stackoverflow.com/users/9699483/samuel"><img class="logocons" src="assets/images/stack.png" /></a>
+      <a href="https://github.com/smarcus4" target="blank"><img class="logocons" src="assets/images/github.png" /></a>
+      <a href="https://www.linkedin.com/in/smarcus4/" target="blank"><img class="logocons" src="assets/images/linkedin.png" /></a>
+      <a href="https://stackoverflow.com/users/9699483/samuel" target="blank"><img class="logocons" src="assets/images/stack.png" /></a>
     </div>
   </div>
   </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin header">What Skills Do I Have?</h3>
+<div id="skills"class="container-fluid bg-2 text-center">
+  <h3  class="margin header">What Skills Do I Have?</h3>
   <div class="col-lg-7" id="donutchart" style="width: 900px; height: 500px;"></div>
 
   <p>I have knowledge and skill in multiple languages including HTML, CSS, Bootstrap, Javascript, Jquery, Node.js, AJAX calls, API's, and Git!</p>
@@ -75,23 +83,81 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Browse Through Some of My Previous Projects</h3><br>
-  <div class="your-class">
+<div class="container-fluid text-center bg-5" >    
+  <h3 id="projects" class="margin">Browse Through Some of My Previous Projects</h3><br>
+  <div class="row col-lg-12 px-5">  
+  
+    <div class="contained col-lg-4 col-sm-12">
+      <img src="./assets/images/trivia.png" alt="Avatar" class="image center-block">
+      <div class="overlay">
+        <div class="text"><a href="#">Project #1</a></div>
+      </div>
+    </div>
 
-      <div><a href="https://ijeli.github.io/The-Dirty-Commit-and-the-Git-Push-Squad-/"><img class="slider-image" src="assets/images/soccer.png" /></a></div>
-      <div><a href="http://smarcus4.github.io/TriviaGame"><img class="slider-image"  src="assets/images/Trivia.png" /></a></div>
-      <div><a href="http://smarcus4.github.io/unit-4-game"><img class="slider-image" src="assets/images/crystalgame.png" /></a></div>
-     
-      
+      <div class="contained col-lg-4 col-sm-12">
+        <img src="./assets/images/crystalgame.png" alt="Avatar" class="image center-block">
+        <div class="overlay">
+          <div class="text"><a href="#">Project #2</a></div>
+        </div>
+      </div>
+
+      <div class="contained col-lg-4 col-sm-12">
+          <img src="./assets/images/soccer.png" alt="Avatar" class="image center-block">
+          <div class="overlay">
+            <div class="text"><a href="#">Project #3</a></div>
+          </div>
+        </div>
   </div>
+
+  <div class="row col-lg-12 px-5">  
+  
+    <div class="contained col-lg-4 col-sm-12">
+      <img src="./assets/images/trivia.png" alt="Avatar" class="image center-block">
+      <div class="overlay">
+        <div class="text"><a href="#">Project #1</a></div>
+      </div>
+    </div>
+
+      <div class="contained col-lg-4 col-sm-12">
+        <img src="./assets/images/crystalgame.png" alt="Avatar" class="image center-block">
+        <div class="overlay">
+          <div class="text"><a href="#">Project #2</a></div>
+        </div>
+      </div>
+
+      <div class="contained col-lg-4 col-sm-12">
+          <img src="./assets/images/soccer.png" alt="Avatar" class="image center-block">
+          <div class="overlay">
+            <div class="text"><a href="#">Project #3</a></div>
+          </div>
+        </div>
+  </div>
+
 </div>
 
-<center>
-<a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon-white"></span> Top of the page
-  </a>
-  </center>
+
+
+
+  <div id="contact"class="container-fluid bg-3 text-center contact">
+    <h3 class="margin header">Contact Me!</h3>
+    
+    <table class=" contact-me">
+      <tr>
+        <td>
+          <i class="fas fa-envelope mailMe"></i>
+          <p> smarcus4@gmu.edu</p>
+        </td>
+        <td>
+          <i class="fas fa-phone phoneMe"></i>
+          <p>(703) 582-8354</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>&copy;Copyright Samuel Marcus </p> 
